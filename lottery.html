@@ -90,12 +90,12 @@
 					lottery.times = 0;
 //					alert(lottery.pri[lottery.index - 1]);
 					//奖品名称
-					
+					$('.prize p').html(lottery.pri[lottery.index]);
 					setTimeout(function(){
 						$('.prize .pri').attr('src','img/prize/'+(lottery.index)+'.png');
-						$('.prize p').html(lottery.pri[lottery.index]);
+						
 						$('.prize').show().siblings().hide();
-					},2000)
+					},1000)
 
 				} else {
 					if(lottery.times < lottery.cycle) {
