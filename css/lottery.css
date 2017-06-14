@@ -8,7 +8,7 @@
   src: url('../face/Microsoft-Yahei-UI-Light.ttc'); /*这里是字体文件路径*/ 
 } 
 html{
-	font-family: 'Microsoft-Yahei-UI-Light.ttc';
+	/*font-family: 'Microsoft-Yahei-UI-Light.ttc';*/
 }
 .page{
 	width: 640px;
