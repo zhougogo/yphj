@@ -7,6 +7,9 @@
   font-family: 'Microsoft-Yahei-UI-Light.ttc'; /*这里是说明调用来的字体名字*/ 
   src: url('../face/Microsoft-Yahei-UI-Light.ttc'); /*这里是字体文件路径*/ 
 } 
+html{
+	font-family: 'Microsoft-Yahei-UI-Light.ttc';
+}
 .page{
 	width: 640px;
 }
@@ -133,7 +136,7 @@
 	text-align: center;
 	z-index: 100;
 	font-size: 21.57px;
-	/*font-family: 'Microsoft-Yahei-UI-Light.ttc';*/
+
 	color: #9c761e;
 	font-weight: bold;
 	top: 234px;
