@@ -122,8 +122,10 @@
 .prize .pri{
 	position: absolute;
 	z-index: 10;
-	left: 140px;
-	top: 366px;
+	left: 132px;
+	top: 352px;
+	width: 410px;
+	/*height: 223px;*/
 }
 .prize p{
 	position: absolute;
