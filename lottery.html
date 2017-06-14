@@ -5,7 +5,7 @@
 		<title>皇家美素佳儿上市</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
+
 		<link rel="stylesheet" type="text/css" href="css/lottery.css">
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 	</head>
@@ -90,7 +90,7 @@
 					lottery.times = 0;
 //					alert(lottery.pri[lottery.index - 1]);
 					//奖品名称
-					
+					$('.prize p').text(lottery.pri[lottery.index]);
 					setTimeout(function(){
 						$('.prize .pri').attr('src','img/prize/'+(lottery.index)+'.png');
 						
@@ -103,7 +103,7 @@
 					} else if(lottery.times == lottery.cycle) {
 						var index = Math.random() * (lottery.count) | 0; //中奖物品通过一个随机数生成
 						lottery.prize = index;
-						$('.prize p').text(lottery.pri[lottery.index]);
+						
 					} else {
 						if(lottery.times > lottery.cycle + 10 && ((lottery.prize == 0 && lottery.index == 7) || lottery.prize == lottery.index + 1)) {
 							lottery.speed += 110;
