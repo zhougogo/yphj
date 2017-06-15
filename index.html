@@ -1,52 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>皇家美素佳儿上市</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
-</head>
-<body>
-	<div class="page page1">
-		<img class="bg" src="img/index/bg.png"/>
-		<img src="img/index/logo.png" class="logo">
-		<img src="img/index/01.png" class="img_01">
-		<img src="img/index/02.png" class="img_02">
-		<div class="img_03 img">
-			<img src="img/index/03.png">
-			<img src="img/index/03.gif" class="gif gif03 lazy">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<!--领取优惠券页面-->
+		<div class="draw all hidden">
+			<img src="img/lq.png"/>
 		</div>
-		<div class="img_04 img">
-			<img src="img/index/04.png">
-			<img src="img/index/04.gif" class="gif gif04 lazy">
+		<!--未购买产品用户页面-->
+		<div class="undraw all hidden">
+			<img class="undrawbg" src="img/wlq.png"/>
+			<img src="img/undrawbtn.png" alt="" class="undrawbtn" />
 		</div>
-		<div class="img_05 img">
-			<img src="img/index/05.png">
-			<img src="img/index/05.gif" class="gif gif05 lazy">
+
+		<!--已领注册礼-->
+		<div class="all accPrize hidden">
+			<img class="accbg" src="img/accprize/accbg.png"/>
+			<img class="accbtn" src="img/accprize/accbtn.png"/>
 		</div>
-		<div class="img_06 img">
-			<img src="img/index/06.png">
-			<img src="img/index/06.gif" class="gif gif06 lazy">
+		<!--参加活动说明-->
+		<div class="all activity hidden">
+			<img src="img/acctivity/activitybg.png" alt="" class="activitybg" />
+			<img src="img/acctivity/acctibtn.png" class="activitybtn"/>
 		</div>
-		<div class="img_07 img">
-			<img src="img/index/07.png">
-			<img src="img/index/07.gif" class="gif gif07 lazy">
-		</div>
-		<div class="img_08 img">
-			<img src="img/index/08.png">
-			<img src="img/index/08.gif" class="gif gif08 lazy">
-		</div>
-		<img src="img/index/09.png" class="img_09 lazy">
-		<img src="img/index/10.png" class="img_10">
-	</div>
-</body>
-<script type="text/javascript">
-	$(function() {
-	    $("img.lazy").lazyload({
-	    	effect : "fadeIn"
-	    });
-	});
-</script>
+	</body>
 </html>
