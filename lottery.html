@@ -102,7 +102,7 @@
 						$('.prize .pri').attr('src','img/prize/'+(lottery.index)+'.png');
 						
 						$('.prize').show().siblings().hide();
-					},1000)
+					},2000)
 
 				} else {
 					if(lottery.times < lottery.cycle) {
@@ -113,13 +113,13 @@
 						
 					} else {
 						if(lottery.times > lottery.cycle + 10 && ((lottery.prize == 0 && lottery.index == 7) || lottery.prize == lottery.index + 1)) {
-							lottery.speed += 110;
+							lottery.speed += 80;
 						} else {
-							lottery.speed += 20;
+							lottery.speed += 50;
 						}
 					}
 					if(lottery.speed < 40) {
-						lottery.speed = 40;
+						lottery.speed = 70;
 					};
 					// console.log(lottery.times+'^^^^^^'+lottery.speed+'^^^^^^^'+lottery.prize);
 					lottery.timer = setTimeout(roll, lottery.speed); //循环调用

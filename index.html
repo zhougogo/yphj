@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<!--领取优惠券页面-->
-		<div class="draw all ">
+		<div class="draw all hidden">
 			<img src="img/lq.png"/>
 		</div>
 		<!--未购买产品用户页面-->
@@ -23,29 +23,10 @@
 			<img class="accbtn" src="img/accprize/accbtn.png"/>
 		</div>
 		<!--参加活动说明-->
-		<div class="all activity hidden">
+		<div class="all activity ">
 			<img src="img/acctivity/activitybg.png" alt="" class="activitybg" />
 			<img src="img/acctivity/acctibtn.png" class="activitybtn"/>
 		</div>
 	</body>
-	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		setTimeout(function(){
-			$('.draw').fadeOut(2000);
-			$('.undraw').fadeIn(2000)
-		},4000);
-		
-		$('.undraw .undrawbtn').click(function(){
-			$('.accPrize').show().siblings().hide();
-		})
-		
-		$('.accPrize .accbtn').click(function(){
-			
-			$('.activity').show().siblings().hide();
-		})
-		$('.activity .activitybtn').click(function(){
-			
-			window.location.href = 'lottery.html'
-		})
-	</script>
+
 </html>
